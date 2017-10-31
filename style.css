@@ -1,0 +1,47 @@
+/* Write your styles here! */
+body {
+  margin: 5px 60px 5px 60px;
+  padding: 2px;
+  line-height: 1.6;
+  font-family: "Alegreya";
+  font-size: 16px;
+}
+
+header#main-header {
+  background: url(http://www.telegraph-office.com/pages/images/Titanic_Wireless_Schematic.gif) center center;
+  padding: 10%;
+  line-height: 1.2;
+  color: firebrick;
+  position: center;
+  z-index: 5; 
+} 
+
+header#main-header::before {
+  /* the "::before" pseudoselector above creates a virtual element
+     (as long as you add the "content" property below.)
+     it's pretty cool!
+  */
+  background: white;
+  font-size: 40px;
+  content: "";
+  opacity: 0.7;
+  position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 40px;
+}
+header#main-header p.summary {
+  font-size: 22px;
+  text-shadow: 0 0 10px firebrick;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: Alegreya;
+  font-weight: normal;
+}
